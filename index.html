@@ -1,0 +1,2522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Silver Falcon | IT Services, Security & POS Solutions Dubai</title>
+<meta name="description" content="Discover Silver Falcon's IT infrastructure, CCTV security, networking, access control and POS hardware solutions for businesses in Dubai and the UAE.">
+<meta name="theme-color" content="#004D26">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green: #004D26;
+    --green-dark: #002E18;
+    --green-light: #197544;
+    --accent: #B9E36B;
+    --white: #FFFFFF;
+    --text: #10251A;
+    --body: #35483C;
+    --muted: #718076;
+    --light: #F3F7F3;
+    --border: #DCE5DE;
+    --font-heading: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --container: 1200px;
+    --radius: 16px;
+    --shadow: 0 20px 55px rgba(0, 53, 27, .09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--body);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: min(var(--container), 90%);
+    margin: auto;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+.section {
+    padding: 105px 0;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 48px;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--green-light);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.section-label::before {
+    content: "";
+    width: 27px;
+    height: 2px;
+    background: var(--accent);
+}
+
+.section-heading h2 {
+    margin-top: 17px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 4vw, 49px);
+    line-height: 1.18;
+    letter-spacing: -1.8px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin-top: 17px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    min-height: 53px;
+    padding: 14px 23px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 800;
+    transition: .3s ease;
+}
+
+.btn-primary {
+    color: var(--green-dark);
+    background: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+    color: var(--green-dark);
+    background: var(--white);
+    border-color: var(--white);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    color: var(--white);
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.35);
+}
+
+.btn-outline:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.btn-green {
+    color: var(--white);
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
+.btn-green:hover {
+    background: var(--green-dark);
+    transform: translateY(-3px);
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 23px;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.text-link span {
+    transition: transform .25s;
+}
+
+.text-link:hover span {
+    transform: translateX(5px);
+}
+
+/* HEADER */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 23px 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.header-container {
+    width: min(var(--container), 90%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(185,227,107,.6);
+    border-radius: 11px;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav a {
+    color: rgba(255,255,255,.85);
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: var(--accent);
+}
+
+.header-btn {
+    padding: 12px 20px;
+    color: var(--green-dark);
+    background: var(--accent);
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.header-btn:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 780px;
+    display: flex;
+    align-items: center;
+    padding: 145px 0 85px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 45%, rgba(35,125,73,.45), transparent 32%),
+        linear-gradient(120deg, #002E18 0%, #004D26 53%, #063A22 100%);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: .12;
+    background-image:
+        linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px);
+    background-size: 55px 55px;
+    mask-image: linear-gradient(to right, transparent, black);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 650px;
+    height: 650px;
+    right: -180px;
+    top: 80px;
+    border: 1px solid rgba(185,227,107,.17);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 65px rgba(185,227,107,.035),
+        0 0 0 130px rgba(185,227,107,.025);
+}
+
+.hero-container {
+    width: min(var(--container), 90%);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    animation: fadeUp .9s ease both;
+}
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    padding: 9px 16px;
+    color: var(--accent);
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(185,227,107,.35);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hero-label span {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--accent);
+}
+
+.hero h1 {
+    max-width: 650px;
+    margin-top: 28px;
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: clamp(46px, 5.4vw, 72px);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero-description {
+    max-width: 560px;
+    margin-top: 25px;
+    color: rgba(255,255,255,.75);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: rgba(255,255,255,.8);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero-feature span {
+    color: var(--accent);
+    font-size: 17px;
+}
+
+/* HERO TECHNOLOGY VISUAL */
+
+.hero-visual {
+    position: relative;
+    min-height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.2s ease both;
+}
+
+.visual-glow {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    background: rgba(185,227,107,.13);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.dashboard {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 470px;
+    padding: 25px;
+    background: rgba(255,255,255,.095);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 30px 80px rgba(0,0,0,.2);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.dashboard-title {
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.dashboard-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.dashboard-status::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.dashboard-main {
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.core-circle {
+    position: relative;
+    z-index: 3;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: linear-gradient(145deg, #197544, #004D26);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 35px rgba(185,227,107,.25);
+}
+
+.core-circle strong {
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 29px;
+}
+
+.core-circle small {
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.orbit {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px dashed rgba(185,227,107,.35);
+    border-radius: 50%;
+    animation: rotate 35s linear infinite;
+}
+
+.orbit-two {
+    width: 295px;
+    height: 295px;
+    border-color: rgba(255,255,255,.17);
+    animation-direction: reverse;
+}
+
+.system-card {
+    position: absolute;
+    z-index: 4;
+    width: 120px;
+    min-height: 85px;
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    background: rgba(0,46,24,.9);
+    border: 1px solid rgba(185,227,107,.4);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,.16);
+    transition: .3s;
+}
+
+.system-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.system-card strong {
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 14px;
+}
+
+.system-card small {
+    color: rgba(255,255,255,.8);
+    font-size: 10px;
+}
+
+.card-top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-left {
+    left: -5px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.card-right {
+    right: -5px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.card-bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.connector {
+    position: absolute;
+    z-index: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: .65;
+}
+
+.connector-one {
+    width: 110px;
+    top: 24%;
+    left: 50%;
+    transform: rotate(90deg);
+}
+
+.connector-two {
+    width: 115px;
+    top: 52%;
+    left: 19%;
+}
+
+.connector-three {
+    width: 115px;
+    top: 52%;
+    right: 19%;
+}
+
+.connector-four {
+    width: 110px;
+    bottom: 23%;
+    left: 50%;
+    transform: rotate(90deg);
+}
+
+.dashboard-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.dashboard-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dashboard-stat strong {
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 16px;
+}
+
+.dashboard-stat span {
+    color: rgba(255,255,255,.55);
+    font-size: 10px;
+}
+
+.floating-label {
+    position: absolute;
+    z-index: 5;
+    right: -15px;
+    bottom: 75px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 18px;
+    color: var(--green-dark);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.2);
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating-icon {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    background: #eaf1eb;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+.floating-label strong {
+    display: block;
+    font-size: 12px;
+}
+
+.floating-label small {
+    display: block;
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* CAPABILITY STRIP */
+
+.trust-strip {
+    padding: 25px 0;
+    color: white;
+    background: var(--green);
+}
+
+.trust-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.trust-title {
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.trust-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px 28px;
+}
+
+.trust-list span {
+    color: rgba(255,255,255,.9);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.trust-list span::before {
+    content: "✓";
+    margin-right: 8px;
+    color: var(--accent);
+}
+
+/* SOLUTIONS */
+
+.solutions {
+    padding: 105px 0;
+    background: white;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.solution-card {
+    position: relative;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: .35s ease;
+}
+
+.solution-card::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: -65px;
+    top: -65px;
+    border: 1px solid rgba(0,77,38,.12);
+    border-radius: 50%;
+    transition: .35s;
+}
+
+.solution-card:hover {
+    transform: translateY(-7px);
+    border-color: #a9c1ae;
+    box-shadow: var(--shadow);
+}
+
+.solution-card:hover::after {
+    transform: scale(1.5);
+}
+
+.solution-number {
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    color: #a7b7aa;
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.solution-icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    background: #eaf1eb;
+    border-radius: 13px;
+}
+
+.solution-icon svg {
+    width: 29px;
+    height: 29px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.solution-card h3 {
+    margin-top: 25px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.solution-card p {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 105px 0;
+    background: var(--light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    min-height: 230px;
+    padding: 28px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #9bb7a3;
+    box-shadow: 0 15px 35px rgba(0,53,27,.06);
+}
+
+.service-icon {
+    width: 53px;
+    height: 53px;
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    background: #eaf1eb;
+    border-radius: 12px;
+}
+
+.service-icon svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.service-card h3 {
+    margin-top: 20px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: 18px;
+}
+
+.service-card p {
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* POS SECTION */
+
+.pos-section {
+    padding: 110px 0;
+    background: white;
+}
+
+.pos-grid {
+    display: grid;
+    grid-template-columns: .95fr 1.05fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.pos-visual {
+    position: relative;
+    min-height: 440px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(145deg, #edf5ee, #f8fbf8);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.pos-visual::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgba(0,77,38,.15);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 45px rgba(0,77,38,.025),
+        0 0 0 90px rgba(0,77,38,.02);
+}
+
+.pos-terminal {
+    position: relative;
+    z-index: 2;
+    width: 245px;
+    padding: 13px;
+    background: #18251d;
+    border-radius: 16px;
+    box-shadow: 0 25px 45px rgba(16,37,26,.22);
+    transform: rotate(-4deg);
+}
+
+.pos-screen {
+    min-height: 195px;
+    padding: 17px;
+    background: #eaf3eb;
+    border-radius: 9px;
+}
+
+.screen-top {
+    display: flex;
+    justify-content: space-between;
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.screen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.screen-grid span {
+    min-height: 37px;
+    background: #cbdccf;
+    border-radius: 5px;
+}
+
+.screen-grid span:nth-child(2n) {
+    background: #b7d29e;
+}
+
+.pos-base {
+    width: 145px;
+    height: 20px;
+    margin: 0 auto;
+    background: #26392d;
+    border-radius: 0 0 12px 12px;
+}
+
+.pos-copy h2 {
+    margin-top: 17px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.18;
+    letter-spacing: -1.8px;
+}
+
+.pos-copy > p {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.pos-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    margin: 25px 0 30px;
+    list-style: none;
+}
+
+.pos-list li {
+    color: var(--body);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pos-list li::before {
+    content: "✓";
+    margin-right: 8px;
+    color: var(--green-light);
+    font-weight: 800;
+}
+
+/* PROCESS */
+
+.process {
+    padding: 105px 0;
+    color: white;
+    background:
+        radial-gradient(circle at 90% 0%, rgba(25,117,68,.4), transparent 30%),
+        var(--green-dark);
+}
+
+.process .section-label {
+    color: var(--accent);
+}
+
+.process .section-heading h2 {
+    color: white;
+}
+
+.process .section-heading p {
+    color: rgba(255,255,255,.7);
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.process-item {
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,.25);
+}
+
+.process-number {
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.process-item h3 {
+    margin-top: 17px;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 21px;
+}
+
+.process-item p {
+    margin-top: 10px;
+    color: rgba(255,255,255,.68);
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 105px 0;
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.about-card {
+    position: relative;
+    min-height: 350px;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background:
+        radial-gradient(circle at 90% 10%, rgba(185,227,107,.2), transparent 35%),
+        linear-gradient(145deg, #197544, #002E18);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-card::before,
+.about-card::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: -110px;
+    right: -80px;
+    border: 1px solid rgba(185,227,107,.3);
+    border-radius: 50%;
+}
+
+.about-card::after {
+    width: 170px;
+    height: 170px;
+    top: -70px;
+    right: -40px;
+}
+
+.about-card strong {
+    position: relative;
+    z-index: 2;
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 34px;
+    line-height: 1.25;
+}
+
+.about-card p {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+}
+
+.about-copy h2 {
+    margin-top: 17px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 4vw, 47px);
+    line-height: 1.2;
+    letter-spacing: -1.7px;
+}
+
+.about-copy p {
+    margin-top: 17px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.about-copy .text-link {
+    margin-top: 10px;
+}
+
+/* FAQ */
+
+.faq {
+    padding: 100px 0;
+    background: var(--light);
+}
+
+.faq-layout {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    gap: 65px;
+}
+
+.faq-intro h2 {
+    margin-top: 17px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: clamp(33px, 4vw, 45px);
+    line-height: 1.2;
+}
+
+.faq-intro p {
+    margin-top: 17px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.faq-list {
+    border-top: 1px solid var(--border);
+}
+
+.faq-item {
+    padding: 23px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-item h3 {
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.faq-item p {
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* CTA */
+
+.contact-cta {
+    padding: 85px 0;
+    background: white;
+}
+
+.cta-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 55px;
+    color: white;
+    background:
+        radial-gradient(circle at 90% 0%, rgba(185,227,107,.16), transparent 32%),
+        linear-gradient(110deg, #002E18, #004D26);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cta-panel::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 8%;
+    top: -220px;
+    border: 1px solid rgba(185,227,107,.3);
+    border-radius: 50%;
+    box-shadow: 0 0 0 45px rgba(185,227,107,.04);
+}
+
+.cta-copy {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.cta-copy .section-label {
+    color: var(--accent);
+}
+
+.cta-copy h2 {
+    margin-top: 15px;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.cta-copy p {
+    margin-top: 13px;
+    color: rgba(255,255,255,.72);
+    font-size: 14px;
+}
+
+.cta-panel .btn {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 70px 0 25px;
+    color: rgba(255,255,255,.72);
+    background: #092B19;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr .8fr .8fr;
+    gap: 55px;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.footer-logo-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    color: var(--accent);
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(185,227,107,.4);
+    border-radius: 10px;
+}
+
+.footer-about p {
+    max-width: 380px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-col h3 {
+    margin-bottom: 18px;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 16px;
+}
+
+.footer-col a,
+.footer-col p {
+    display: block;
+    margin-top: 11px;
+    color: rgba(255,255,255,.7);
+    font-size: 13px;
+    transition: .25s;
+}
+
+.footer-col a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    font-size: 12px;
+}
+
+/* MOBILE FIXED CTA */
+
+.mobile-actions {
+    display: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes rotate {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* TABLET RESPONSIVE */
+
+@media(max-width: 1000px) {
+    .nav {
+        gap: 16px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .hero-container {
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .dashboard {
+        transform: none;
+    }
+
+    .pos-grid,
+    .about-grid {
+        gap: 40px;
+    }
+
+    .faq-layout {
+        gap: 35px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px) {
+    body {
+        padding-bottom: 72px;
+    }
+
+    .container,
+    .header-container,
+    .hero-container {
+        width: 90%;
+    }
+
+    .header {
+        padding: 17px 0;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header-btn {
+        padding: 11px 14px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 125px 0 60px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: clamp(43px, 10vw, 58px);
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        min-height: 450px;
+    }
+
+    .dashboard {
+        max-width: 440px;
+    }
+
+    .floating-label {
+        right: 0;
+        bottom: 30px;
+    }
+
+    .trust-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .trust-list {
+        justify-content: flex-start;
+    }
+
+    .section,
+    .solutions,
+    .services,
+    .pos-section,
+    .process,
+    .about,
+    .faq {
+        padding: 75px 0;
+    }
+
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pos-grid,
+    .about-grid,
+    .faq-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .pos-visual {
+        min-height: 360px;
+    }
+
+    .process-grid {
+        gap: 25px;
+    }
+
+    .cta-panel {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+
+    .cta-panel .btn {
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .mobile-actions {
+        position: fixed;
+        z-index: 200;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97);
+        border-top: 1px solid var(--border);
+        box-shadow: 0 -8px 25px rgba(0,53,27,.08);
+        backdrop-filter: blur(12px);
+    }
+
+    .mobile-actions .btn {
+        min-height: 47px;
+        padding: 9px;
+        font-size: 12px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width: 480px) {
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-label {
+        font-size: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-features {
+        gap: 13px;
+    }
+
+    .hero-feature {
+        font-size: 11px;
+    }
+
+    .hero-visual {
+        min-height: 370px;
+    }
+
+    .dashboard {
+        padding: 16px;
+    }
+
+    .dashboard-main {
+        min-height: 255px;
+    }
+
+    .core-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .orbit {
+        width: 175px;
+        height: 175px;
+    }
+
+    .orbit-two {
+        width: 245px;
+        height: 245px;
+    }
+
+    .system-card {
+        width: 90px;
+        min-height: 68px;
+        padding: 8px 5px;
+    }
+
+    .system-card strong {
+        font-size: 12px;
+    }
+
+    .system-card small {
+        font-size: 9px;
+    }
+
+    .dashboard-footer {
+        gap: 5px;
+    }
+
+    .dashboard-stat strong {
+        font-size: 13px;
+    }
+
+    .dashboard-stat span {
+        font-size: 9px;
+    }
+
+    .floating-label {
+        right: 0;
+        bottom: 5px;
+        padding: 10px;
+    }
+
+    .solutions-grid,
+    .services-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-card {
+        min-height: 285px;
+    }
+
+    .service-card {
+        min-height: 195px;
+    }
+
+    .pos-visual {
+        min-height: 300px;
+    }
+
+    .pos-terminal {
+        width: 220px;
+    }
+
+    .pos-screen {
+        min-height: 170px;
+    }
+
+    .pos-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        min-height: 280px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 17px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+    <div class="header-container">
+
+        <a href="#home" class="logo" aria-label="Silver Falcon homepage">
+            <span class="logo-icon">SF</span>
+            <span>Silver Falcon</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#solutions">Solutions</a>
+            <a href="#services">Services</a>
+            <a href="#pos">POS Systems</a>
+            <a href="#about">About Us</a>
+            <a href="#faq">FAQs</a>
+        </nav>
+
+        <a href="https://silverfalcon.me/contact/" class="header-btn">
+            Get a Quote →
+        </a>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                <span></span>
+                Business Technology Solutions
+            </div>
+
+            <h1>
+                Smarter Technology.
+                <span>Stronger Businesses.</span>
+            </h1>
+
+            <p class="hero-description">
+                Empower your business with reliable IT infrastructure,
+                advanced security systems and intelligent POS solutions.
+                Silver Falcon brings the technology your business needs
+                to connect, protect and operate with confidence.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#solutions" class="btn btn-primary">
+                    Explore Our Solutions <span>→</span>
+                </a>
+
+                <a href="https://silverfalcon.me/contact/" class="btn btn-outline">
+                    Talk to Our Team <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div class="hero-feature">
+                    <span>✓</span>
+                    IT Infrastructure
+                </div>
+
+                <div class="hero-feature">
+                    <span>✓</span>
+                    Security Systems
+                </div>
+
+                <div class="hero-feature">
+                    <span>✓</span>
+                    POS Solutions
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="visual-glow"></div>
+
+            <div class="dashboard">
+
+                <div class="dashboard-header">
+                    <div class="dashboard-title">
+                        Business Technology
+                    </div>
+
+                    <div class="dashboard-status">
+                        Connected
+                    </div>
+                </div>
+
+                <div class="dashboard-main">
+
+                    <div class="orbit"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="connector connector-one"></div>
+                    <div class="connector connector-two"></div>
+                    <div class="connector connector-three"></div>
+                    <div class="connector connector-four"></div>
+
+                    <div class="core-circle">
+                        <strong>SF</strong>
+                        <small>SILVER FALCON</small>
+                    </div>
+
+                    <div class="system-card card-top">
+                        <strong>IT</strong>
+                        <small>Infrastructure</small>
+                    </div>
+
+                    <div class="system-card card-left">
+                        <strong>CCTV</strong>
+                        <small>Security Systems</small>
+                    </div>
+
+                    <div class="system-card card-right">
+                        <strong>POS</strong>
+                        <small>Retail Solutions</small>
+                    </div>
+
+                    <div class="system-card card-bottom">
+                        <strong>NETWORK</strong>
+                        <small>Connectivity</small>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-footer">
+
+                    <div class="dashboard-stat">
+                        <strong>01</strong>
+                        <span>Infrastructure</span>
+                    </div>
+
+                    <div class="dashboard-stat">
+                        <strong>02</strong>
+                        <span>Protection</span>
+                    </div>
+
+                    <div class="dashboard-stat">
+                        <strong>03</strong>
+                        <span>Operations</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="floating-label">
+                <div class="floating-icon">✦</div>
+                <div>
+                    <strong>Integrated Solutions</strong>
+                    <small>Technology for business</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CAPABILITIES STRIP -->
+
+<section class="trust-strip">
+    <div class="container trust-inner">
+
+        <div class="trust-title">
+            Technology for everyday business
+        </div>
+
+        <div class="trust-list">
+            <span>IT Infrastructure</span>
+            <span>Security Systems</span>
+            <span>POS & Retail Hardware</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- SOLUTIONS SECTION -->
+
+<section class="solutions" id="solutions">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">Our Solutions</span>
+
+            <h2>
+                Technology solutions built around your business
+            </h2>
+
+            <p>
+                From reliable IT infrastructure to business security
+                and point-of-sale equipment, explore technology
+                solutions designed around your operational needs.
+            </p>
+
+        </div>
+
+        <div class="solutions-grid">
+
+            <article class="solution-card">
+
+                <span class="solution-number">01 / IT</span>
+
+                <div class="solution-icon">
+                    <svg viewBox="0 0 32 32">
+                        <rect x="4" y="5" width="24" height="8" rx="2"/>
+                        <rect x="4" y="19" width="24" height="8" rx="2"/>
+                        <path d="M9 9h.01M9 23h.01M14 9h9M14 23h9"/>
+                    </svg>
+                </div>
+
+                <h3>IT Infrastructure & Support</h3>
+
+                <p>
+                    Support your business operations with server setup,
+                    networking, structured cabling and IT maintenance.
+                </p>
+
+                <a href="https://silverfalcon.me/contact/" class="text-link">
+                    Explore IT solutions <span>→</span>
+                </a>
+
+            </article>
+
+            <article class="solution-card">
+
+                <span class="solution-number">02 / SECURITY</span>
+
+                <div class="solution-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M16 3l12 5v8c0 7-5 11-12 14C9 27 4 23 4 16V8z"/>
+                        <path d="M11 16l3 3 7-7"/>
+                    </svg>
+                </div>
+
+                <h3>Security & Access Systems</h3>
+
+                <p>
+                    Explore CCTV, biometric access and security
+                    systems for your business premises.
+                </p>
+
+                <a href="https://silverfalcon.me/contact/" class="text-link">
+                    Explore security solutions <span>→</span>
+                </a>
+
+            </article>
+
+            <article class="solution-card">
+
+                <span class="solution-number">03 / POS</span>
+
+                <div class="solution-icon">
+                    <svg viewBox="0 0 32 32">
+                        <rect x="5" y="3" width="22" height="19" rx="2"/>
+                        <path d="M11 27h10M16 22v5M10 8h12M10 13h4M18 13h4"/>
+                    </svg>
+                </div>
+
+                <h3>POS & Retail Technology</h3>
+
+                <p>
+                    Equip restaurants, cafés and retail environments
+                    with POS terminals and supporting hardware.
+                </p>
+
+                <a href="#pos" class="text-link">
+                    Explore POS systems <span>→</span>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES SECTION -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">Our Services</span>
+
+            <h2>
+                Complete technology services for modern businesses
+            </h2>
+
+            <p>
+                Discover practical IT, networking and security
+                services to support your business technology environment.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <svg viewBox="0 0 32 32">
+                        <rect x="4" y="5" width="24" height="8" rx="2"/>
+                        <rect x="4" y="19" width="24" height="8" rx="2"/>
+                        <path d="M9 9h.01M9 23h.01M14 9h9M14 23h9"/>
+                    </svg>
+                </div>
+
+                <h3>Server Setup</h3>
+
+                <p>
+                    Server installation and configuration to support
+                    your business IT environment.
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <svg viewBox="0 0 32 32">
+                        <circle cx="16" cy="16" r="4"/>
+                        <circle cx="5" cy="7" r="2"/>
+                        <circle cx="27" cy="7" r="2"/>
+                        <circle cx="5" cy="25" r="2"/>
+                        <circle cx="27" cy="25" r="2"/>
+                        <path d="M8 8l5 5M24 8l-5 5M8 24l5-5M24 24l-5-5"/>
+                    </svg>
+                </div>
+
+                <h3>Networking & Cabling</h3>
+
+                <p>
+                    Network setup, structured connectivity and
+                    fibre optic cabling services.
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M4 13l12-8 12 8"/>
+                        <path d="M7 12v14h18V12"/>
+                        <path d="M12 26v-9h8v9"/>
+                        <circle cx="16" cy="11" r="2"/>
+                    </svg>
+                </div>
+
+                <h3>CCTV Installation</h3>
+
+                <p>
+                    Surveillance camera and CCTV system installation
+                    for business premises.
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <svg viewBox="0 0 32 32">
+                        <rect x="7" y="4" width="18" height="24" rx="3"/>
+                        <circle cx="16" cy="12" r="3"/>
+                        <path d="M11 21c1.2-3 8.8-3 10 0M16 25h.01"/>
+                    </svg>
+                </div>
+
+                <h3>Access & Biometrics</h3>
+
+                <p>
+                    Door access and biometric systems for
+                    controlled business entry.
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M16 4v12"/>
+                        <path d="M10 10a9 9 0 1 0 12 0"/>
+                        <path d="M7 25l-2 3M25 25l2 3"/>
+                    </svg>
+                </div>
+
+                <h3>IP PABX & Call Centre</h3>
+
+                <p>
+                    Business communication and IP PABX setup
+                    for connected teams.
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <svg viewBox="0 0 32 32">
+                        <path d="M16 3l12 5v8c0 7-5 11-12 14C9 27 4 23 4 16V8z"/>
+                        <path d="M11 16l3 3 7-7"/>
+                    </svg>
+                </div>
+
+                <h3>Annual Maintenance</h3>
+
+                <p>
+                    Annual Maintenance Contract options for
+                    ongoing technology support.
+                </p>
+
+            </article>
+
+        </div>
+
+        <div style="text-align:center;margin-top:42px;">
+            <a href="https://silverfalcon.me/contact/" class="btn btn-green">
+                Discuss Your Requirements →
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POS SECTION -->
+
+<section class="pos-section" id="pos">
+
+    <div class="container pos-grid">
+
+        <div class="pos-visual">
+
+            <div>
+
+                <div class="pos-terminal">
+
+                    <div class="pos-screen">
+
+                        <div class="screen-top">
+                            <span>FALCON POS</span>
+                            <span>● READY</span>
+                        </div>
+
+                        <div class="screen-grid">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pos-base"></div>
+
+            </div>
+
+        </div>
+
+        <div class="pos-copy">
+
+            <span class="section-label">Falcon POS Solutions</span>
+
+            <h2>
+                Smarter POS hardware for everyday business operations
+            </h2>
+
+            <p>
+                Give your restaurant, café or retail business a
+                practical point-of-sale hardware setup. Explore
+                Falcon POS terminals and supporting equipment
+                to find options for your operational requirements.
+            </p>
+
+            <ul class="pos-list">
+                <li>Touchscreen POS terminals</li>
+                <li>Thermal receipt printers</li>
+                <li>Cash drawers</li>
+                <li>Kitchen display screens</li>
+                <li>Barcode scanners</li>
+                <li>Price checker screens</li>
+            </ul>
+
+            <a href="https://silverfalcon.me/contact/" class="btn btn-green">
+                Enquire About POS Hardware →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROCESS SECTION -->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">How We Work</span>
+
+            <h2>
+                A straightforward approach to your technology requirements
+            </h2>
+
+            <p>
+                Start with your business needs and move towards
+                a suitable technology solution with a clear
+                enquiry process.
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <article class="process-item">
+
+                <span class="process-number">STEP 01</span>
+
+                <h3>Tell Us What You Need</h3>
+
+                <p>
+                    Share your business type, project requirements
+                    and the technology challenge you want to address.
+                </p>
+
+            </article>
+
+            <article class="process-item">
+
+                <span class="process-number">STEP 02</span>
+
+                <h3>Discuss Your Requirements</h3>
+
+                <p>
+                    Connect with the Silver Falcon team to discuss
+                    suitable services, systems or hardware options.
+                </p>
+
+            </article>
+
+            <article class="process-item">
+
+                <span class="process-number">STEP 03</span>
+
+                <h3>Move Your Project Forward</h3>
+
+                <p>
+                    Confirm the proposed requirements and next
+                    steps for your technology project or enquiry.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-card">
+
+            <strong>
+                One Technology Partner.
+                Multiple Business Solutions.
+            </strong>
+
+            <p>
+                IT infrastructure, business security and POS
+                hardware brought together under one technology provider.
+            </p>
+
+        </div>
+
+        <div class="about-copy">
+
+            <span class="section-label">About Silver Falcon</span>
+
+            <h2>
+                Supporting the technology behind your business
+            </h2>
+
+            <p>
+                Silver Falcon Computer Trading LLC provides technology
+                products and services for businesses in Dubai and across
+                the UAE. Its service areas include IT infrastructure,
+                networking, CCTV, access control, business communications
+                and maintenance.
+            </p>
+
+            <p>
+                The company also supplies Falcon POS hardware for
+                restaurant, café and retail environments, helping
+                businesses explore equipment suited to their
+                operational requirements.
+            </p>
+
+            <a href="https://silverfalcon.me/contact/" class="text-link">
+                Contact Silver Falcon <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ SECTION -->
+
+<section class="faq" id="faq">
+
+    <div class="container faq-layout">
+
+        <div class="faq-intro">
+
+            <span class="section-label">FAQs</span>
+
+            <h2>
+                Frequently asked questions
+            </h2>
+
+            <p>
+                Find helpful information about Silver Falcon's
+                business technology services and products.
+                Contact the team if you need further details.
+            </p>
+
+        </div>
+
+        <div class="faq-list">
+
+            <article class="faq-item">
+                <h3>What services does Silver Falcon provide?</h3>
+                <p>
+                    Silver Falcon lists services including CCTV installation,
+                    server setup, networking, fibre optic cabling, IP PABX,
+                    access control, data recovery and Annual Maintenance
+                    Contracts.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Does Silver Falcon provide POS systems for restaurants?</h3>
+                <p>
+                    Silver Falcon offers Falcon POS hardware and related
+                    equipment such as touchscreen terminals, cash drawers,
+                    thermal printers and kitchen display screens. Contact
+                    the team to discuss compatibility and your setup.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Can I enquire about an IT infrastructure project?</h3>
+                <p>
+                    Yes. Use the contact page to explain your requirements,
+                    including the type of business, services needed
+                    and project details.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Does Silver Falcon provide CCTV installation?</h3>
+                <p>
+                    CCTV installation is listed among Silver Falcon's
+                    services. Contact the company to discuss your
+                    surveillance requirements.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Where is Silver Falcon based?</h3>
+                <p>
+                    Silver Falcon lists its location in Dubai,
+                    United Arab Emirates. Contact the company to
+                    confirm the appropriate location and arrangements.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT CTA -->
+
+<section class="contact-cta" id="contact">
+
+    <div class="container">
+
+        <div class="cta-panel">
+
+            <div class="cta-copy">
+
+                <span class="section-label">Let's Get Started</span>
+
+                <h2>
+                    Looking for the right technology solution for your business?
+                </h2>
+
+                <p>
+                    Tell Silver Falcon what your business needs.
+                    Start a conversation about IT services,
+                    security systems or POS hardware.
+                </p>
+
+            </div>
+
+            <a href="https://silverfalcon.me/contact/" class="btn btn-primary">
+                Contact Our Team →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <a href="#home" class="footer-logo">
+                    <span class="footer-logo-icon">SF</span>
+                    <span>Silver Falcon</span>
+                </a>
+
+                <p>
+                    Business technology solutions covering IT
+                    infrastructure, security systems and POS
+                    hardware for businesses in Dubai and across
+                    the UAE.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#services">Services</a>
+                <a href="#pos">POS Systems</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Contact</h3>
+
+                <p>Dubai, United Arab Emirates</p>
+
+                <a href="https://silverfalcon.me/contact/">
+                    Contact & Enquiries
+                </a>
+
+                <a href="https://silverfalcon.me/">
+                    Current Website
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                Silver Falcon Computer Trading LLC. All rights reserved.
+            </span>
+
+            <span>
+                Connect. Protect. Operate.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- MOBILE FIXED ACTIONS -->
+
+<div class="mobile-actions">
+
+    <a href="https://silverfalcon.me/contact/" class="btn btn-green">
+        Request a Quote
+    </a>
+
+    <a href="#solutions" class="btn btn-primary">
+        Explore Solutions
+    </a>
+
+</div>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
